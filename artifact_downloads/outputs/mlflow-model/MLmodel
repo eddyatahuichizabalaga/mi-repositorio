@@ -1,0 +1,30 @@
+artifact_path: outputs/mlflow-model
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.8.17
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: pickle
+    sklearn_version: 0.22.1
+metadata:
+  azureml.base_image: mcr.microsoft.com/azureml/curated/azureml-automl:142
+  azureml.engine: automl
+mlflow_version: 2.4.1
+model_uuid: daee9388a4b844498ce06fbd56fb9832
+run_id: calm_turtle_jyc80gz19c_6
+signature:
+  inputs: '[{"type": "long", "name": "sex"}, {"type": "long", "name": "height"}, {"type":
+    "long", "name": "weight"}, {"type": "double", "name": "waistline"}, {"type": "double",
+    "name": "DBP"}, {"type": "double", "name": "triglyceride"}, {"type": "double",
+    "name": "hemoglobin"}, {"type": "double", "name": "serum_creatinine"}, {"type":
+    "double", "name": "SGOT_ALT"}, {"type": "double", "name": "gamma_GTP"}, {"type":
+    "long", "name": "SMK_stat_type_cd"}]'
+  outputs: '[{"type": "tensor", "tensor-spec": {"dtype": "int64", "shape": [-1]}}]'
+utc_time_created: '2023-10-28 16:53:56.232638'
