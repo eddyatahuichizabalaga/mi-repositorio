@@ -1,0 +1,1 @@
+{"input_data": {"columns": ["sex", "height", "weight", "waistline", "DBP", "triglyceride", "hemoglobin", "serum_creatinine", "SGOT_ALT", "gamma_GTP", "SMK_stat_type_cd"], "data": [{"sex": 0, "height": 155, "weight": 70, "waistline": 780, "DBP": 820, "triglyceride": 210, "hemoglobin": 133, "serum_creatinine": 6, "SGOT_ALT": 60, "gamma_GTP": 120, "SMK_stat_type_cd": 1}]}}
